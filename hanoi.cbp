@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="calc.hpp" />
 		<Unit filename="disc.hpp" />
+		<Unit filename="globals.hpp" />
 		<Unit filename="hanoi.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/calc.cpp" />
