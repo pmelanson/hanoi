@@ -15,3 +15,7 @@
 #CB generated files
 *.layout
 *.depend
+
+#bin and obj dirs
+bin/
+obj/
