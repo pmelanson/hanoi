@@ -6,12 +6,13 @@ private:
 
 public:
 
-	disc_c		*next;
 	unsigned	size;
+	disc_c		*next;
 
 	void draw	(unsigned x, unsigned y);
 
 	disc_c		(unsigned size_);
+	disc_c		(unsigned size_, disc_c *next_);
 	~disc_c		();
 };
 

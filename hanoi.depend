@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1359918827 source:/home/patrick/Code/hanoi/main.cpp
+	"hanoi.hpp"
+	<chrono>
+	<thread>
+	<algorithm>
+	<cmath>
+	<iostream>
+
+1359865859 /home/patrick/Code/hanoi/hanoi.hpp
+	"tower.hpp"
+	"disc.hpp"
+
+1359909098 /home/patrick/Code/hanoi/tower.hpp
+	"globals.hpp"
+
+1359865643 /home/patrick/Code/hanoi/disc.hpp
+
+1359819718 /home/patrick/Code/hanoi/calc.hpp
+
+1359682509 source:/home/patrick/Code/hanoi/src/calc.cpp
+	"../calc.hpp"
+
+1359860950 source:/home/patrick/Code/hanoi/src/disc.cpp
+	"../disc.hpp"
+	"../globals.hpp"
+	<iostream>
+
+1359861014 source:/home/patrick/Code/hanoi/src/tower.cpp
+	"../tower.hpp"
+	"../disc.hpp"
+	"../globals.hpp"
+	<iostream>
+
+1359847762 /home/patrick/Code/hanoi/globals.hpp
+
+1359861174 source:/home/patrick/Code/hanoi/src/solver.cpp
+	"../solver.hpp"
+	"../tower.hpp"
+	"../globals.hpp"
+	<iostream>
+
+1359857710 /home/patrick/Code/hanoi/solver.hpp
+
+1359861057 source:/home/patrick/Code/hanoi/src/globals.cpp
+	"../globals.hpp"
+
+1359865635 source:/home/patrick/Code/hanoi/disc.cpp
+	"disc.hpp"
+	"globals.hpp"
+	<iostream>
+
+1359863183 source:/home/patrick/Code/hanoi/globals.cpp
+	"globals.hpp"
+
+1359863183 source:/home/patrick/Code/hanoi/solver.cpp
+	"solver.hpp"
+	"tower.hpp"
+	"globals.hpp"
+	<iostream>
+
+1359910342 source:/home/patrick/Code/hanoi/tower.cpp
+	"tower.hpp"
+	"disc.hpp"
+	"globals.hpp"
+	<iostream>
+

@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
 	<File name="calc.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="53" topLine="0" />
 	</File>
-	<File name="disc.hpp" open="1" top="0" tabpos="1">
-		<Cursor position="136" topLine="0" />
+	<File name="disc.hpp" open="0" top="0" tabpos="1">
+		<Cursor position="33" topLine="0" />
 	</File>
-	<File name="globals.hpp" open="1" top="1" tabpos="4">
-		<Cursor position="41" topLine="0" />
+	<File name="globals.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="142" topLine="0" />
 	</File>
 	<File name="hanoi.hpp" open="0" top="0" tabpos="0">
-		<Cursor position="60" topLine="0" />
+		<Cursor position="82" topLine="0" />
 	</File>
-	<File name="src/disc.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="93" topLine="0" />
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="233" topLine="0" />
 	</File>
-	<File name="src/tower.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="0" topLine="0" />
+	<File name="solver.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="131" topLine="0" />
 	</File>
-	<File name="tower.hpp" open="1" top="0" tabpos="3">
-		<Cursor position="170" topLine="0" />
+	<File name="src/disc.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="439" topLine="0" />
+	</File>
+	<File name="src/globals.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="83" topLine="0" />
+	</File>
+	<File name="src/solver.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="413" topLine="0" />
+	</File>
+	<File name="src/tower.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="752" topLine="0" />
+	</File>
+	<File name="tower.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="154" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
