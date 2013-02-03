@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+#CB generated files
+*.layout
+*.depend
