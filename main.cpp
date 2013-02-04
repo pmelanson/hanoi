@@ -97,6 +97,7 @@ int main() {
 	cout << "Allegrissimo\n";
 	cout << "Presto\n";
 	cout << "Prestissimo\n";
+	cout << "TURBO\n";
 	cout << "\n> ";
 
 	string input;
@@ -125,10 +126,12 @@ int main() {
 	else if(input == "allegrissimo")	interval = 163;
 	else if(input == "presto")			interval = 170;
 	else if(input == "prestissimo")		interval = 180;
+	else if(input == "turbo")			interval = 1;
 	else
 		cout << "Unrecognised input, defaulting to Tempo giusto\n", interval = 75;
 
 	interval = 60000/interval;	//convert from BPM to ms
+	if(input == "turbo") interval = 0;
 
 
 	char accel;
