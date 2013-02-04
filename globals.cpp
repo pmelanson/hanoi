@@ -1,6 +1,6 @@
 #include "globals.hpp"
 
-unsigned	scrx = 640,
-			scry = 480;
+unsigned	scrx = 1280,
+			scry = 1024;
 
 bool		debug = false;

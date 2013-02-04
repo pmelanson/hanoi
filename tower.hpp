@@ -9,21 +9,26 @@ class disc_c;
 class tower_c {
 private:
 
-	disc_c		*head;
-	unsigned	length;
+	disc_c			*head;
+	const unsigned	x;
+
+	const unsigned	width,
+					height;
+	const int		col;
+public:
+	unsigned		discs;
 
 public:
 
-	void		push	(unsigned var);
-	unsigned	pop		(),
-				peek	() const;
-	unsigned	operator[](unsigned n) const;
+	void			push	(unsigned var);
+	unsigned		pop		(),
+					peek	() const;
+	disc_c*			operator[](unsigned n) const;
 
-	void		draw	(unsigned x);
+	void			draw	(unsigned spacing);
 
-	tower_c				();
-	tower_c				(unsigned n);
-	~tower_c			();
+	tower_c					(unsigned x_);
+	~tower_c				();
 };
 
 

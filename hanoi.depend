@@ -1,20 +1,22 @@
 # depslib dependency file v1.0
-1359918827 source:/home/patrick/Code/hanoi/main.cpp
+1359949971 source:/home/patrick/Code/hanoi/main.cpp
 	"hanoi.hpp"
 	<chrono>
 	<thread>
 	<algorithm>
 	<cmath>
 	<iostream>
+	<allegro.h>
 
-1359865859 /home/patrick/Code/hanoi/hanoi.hpp
+1359926297 /home/patrick/Code/hanoi/hanoi.hpp
 	"tower.hpp"
 	"disc.hpp"
-
-1359909098 /home/patrick/Code/hanoi/tower.hpp
 	"globals.hpp"
 
-1359865643 /home/patrick/Code/hanoi/disc.hpp
+1359948823 /home/patrick/Code/hanoi/tower.hpp
+	"globals.hpp"
+
+1359946679 /home/patrick/Code/hanoi/disc.hpp
 
 1359819718 /home/patrick/Code/hanoi/calc.hpp
 
@@ -45,12 +47,13 @@
 1359861057 source:/home/patrick/Code/hanoi/src/globals.cpp
 	"../globals.hpp"
 
-1359865635 source:/home/patrick/Code/hanoi/disc.cpp
+1359949872 source:/home/patrick/Code/hanoi/disc.cpp
 	"disc.hpp"
 	"globals.hpp"
+	<allegro.h>
 	<iostream>
 
-1359863183 source:/home/patrick/Code/hanoi/globals.cpp
+1359934112 source:/home/patrick/Code/hanoi/globals.cpp
 	"globals.hpp"
 
 1359863183 source:/home/patrick/Code/hanoi/solver.cpp
@@ -59,9 +62,10 @@
 	"globals.hpp"
 	<iostream>
 
-1359910342 source:/home/patrick/Code/hanoi/tower.cpp
+1359949908 source:/home/patrick/Code/hanoi/tower.cpp
 	"tower.hpp"
 	"disc.hpp"
 	"globals.hpp"
+	<allegro.h>
 	<iostream>
 

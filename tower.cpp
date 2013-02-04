@@ -3,15 +3,42 @@
 #include "disc.hpp"
 #include "globals.hpp"
 
+#include <allegro.h>
+extern BITMAP *buffer;
+
 #include <iostream>
 using std::cout;
 using std::endl;
 
+
+void		tower_c::draw(unsigned spacing) {
+
+
+	rectfill(buffer,	//draw base
+			x*spacing - SCREEN_W/width, SCREEN_H/1.5 + SCREEN_H/height,
+			x*spacing + SCREEN_W/width, SCREEN_H/1.5 - SCREEN_H/height,
+			col);
+	circlefill(buffer,	//round off left side
+			x*spacing - SCREEN_W/width,
+			SCREEN_H/1.5,
+			SCREEN_H/height,
+			col);
+	circlefill(buffer,	//round off right side
+			x*spacing + SCREEN_W/width,
+			SCREEN_H/1.5,
+			SCREEN_H/height,
+			col);
+
+	for(unsigned i = 0; i < discs; ++i) {
+		operator[](i)->draw(x*spacing, SCREEN_H/1.514 - (discs - i) * 25);
+	}
+}
+
+
 void		tower_c::push(unsigned var) {
 	if(debug) cout << "PUSHING " << var << "->" << head << endl;
-	disc_c *disc = new disc_c(var, head);
-	head = disc;
-	++length;
+	++discs;
+	head = new disc_c(var, head);
 }
 
 unsigned	tower_c::pop() {
@@ -22,6 +49,7 @@ unsigned	tower_c::pop() {
 	disc_c *temp = head;
 	head = head->next;
 	delete temp;
+	--discs;
 
 	return var;
 }
@@ -31,26 +59,20 @@ unsigned	tower_c::peek() const {
 	return head->size;
 }
 
-unsigned	tower_c::operator[](unsigned n) const {
-	if (n > length || !head) return 0;	//out of bounds
+disc_c*		tower_c::operator[](unsigned n) const {
+	if (!head) return NULL;	//empty list
 
 	disc_c *it = head;
-	while(n && it) {
+	while(n && it->next) {
 		it = it->next;
 		--n;
 	}
 
-	if(!it) return 0;	//if 'it' has advanced beyond the end of the list
-	return it->size;
+	if(n) return NULL;
+	return it;
 }
 
-tower_c::tower_c() : head(0x0), length(0) {
-}
-
-tower_c::tower_c(unsigned n) : head(0x0), length(0) {
-	while(n) {
-		push(n--);
-	}
+tower_c::tower_c(unsigned x_) : head(0x0), x(x_), width(10), height(50), col(9056000 + x * 100), discs(0) {
 }
 
 tower_c::~tower_c() {

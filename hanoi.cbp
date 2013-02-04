@@ -31,17 +31,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="calc.hpp" />
+		<Linker>
+			<Add option="-lalleg" />
+		</Linker>
+		<Unit filename="disc.cpp" />
 		<Unit filename="disc.hpp" />
+		<Unit filename="globals.cpp" />
 		<Unit filename="globals.hpp" />
 		<Unit filename="hanoi.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="solver.hpp" />
-		<Unit filename="src/calc.cpp" />
-		<Unit filename="src/disc.cpp" />
-		<Unit filename="src/globals.cpp" />
-		<Unit filename="src/solver.cpp" />
-		<Unit filename="src/tower.cpp" />
+		<Unit filename="tower.cpp" />
 		<Unit filename="tower.hpp" />
 		<Extensions>
 			<code_completion />
